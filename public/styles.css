@@ -1,0 +1,148 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Updated background to a soft gradient */
+    background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+    color: #212529;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.25rem;
+    color: #6c757d;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    font-size: 1.75rem;
+    color: #343a40;
+}
+
+/* Form Inputs */
+.form-control {
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+}
+
+/* Buttons */
+.btn {
+    border-radius: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary {
+    background-color: #ad0dfd;
+    border-color: #ad0dfd;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
+
+.btn-success {
+    background-color: #198754;
+    border-color: #198754;
+}
+
+.btn-success:hover {
+    background-color: #157347;
+    border-color: #146c43;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #212529;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+    border-color: #d39e00;
+}
+
+.btn-info {
+    background-color: #0dcaf0;
+    border-color: #0dcaf0;
+}
+
+.btn-info:hover {
+    background-color: #31d2f2;
+    border-color: #31d2f2;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+/* Model List */
+#modelList .card {
+    min-height: 200px;
+}
+
+#modelList .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#modelList .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+#modelList .card-text {
+    flex-grow: 1;
+}
+
+#modelList .btn {
+    align-self: flex-start;
+}
+
+/* Model Details */
+#modelDetails {
+    min-height: 100px;
+    background-color: #e9ecef;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+}
